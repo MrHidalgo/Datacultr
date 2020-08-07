@@ -1,0 +1,57 @@
+// SECTION :: START
+
+.main {
+	overflow: hidden;
+	position: relative;
+	background-image: url('../img/img-main-bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__wrapper {
+		display: flex;
+		padding-top: 340px;
+		padding-left: 147px;
+		padding-bottom: 36px;
+	}
+
+	&__content {
+		position: relative;
+		width: 100%;
+		max-width: 748px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -200px;
+			left: -200px;
+			width: 1024px;
+			height: 1024px;
+			border-radius: 50%;
+			background-color: rgba(#FFD400, 0.8);
+		}
+
+		> * {
+			z-index: 2;
+			position: relative;
+		}
+	}
+
+	&__title {
+		padding-bottom: 39px;
+		font-weight: bold;
+		font-size: 41px;
+		letter-spacing: 0.04em;
+		text-align: left;
+		color: #040404;
+	}
+
+	&__desc {
+		font-size: 24px;
+		letter-spacing: 0.06em;
+		line-height: 33px;
+		color: #3b3b3b;
+	}
+}
+
+// SECTION :: END

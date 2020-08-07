@@ -288,4 +288,346 @@ picture {
   padding-right: 90px;
 }
 
+/* line 3, src/scss/_components/homepage/_main.scss */
+.main {
+  overflow: hidden;
+  position: relative;
+  background-image: url("../img/img-main-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 11, src/scss/_components/homepage/_main.scss */
+.main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 340px;
+  padding-left: 147px;
+  padding-bottom: 36px;
+}
+
+/* line 18, src/scss/_components/homepage/_main.scss */
+.main__content {
+  position: relative;
+  width: 100%;
+  max-width: 748px;
+}
+
+/* line 23, src/scss/_components/homepage/_main.scss */
+.main__content:after {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  width: 1024px;
+  height: 1024px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(255, 212, 0, 0.8);
+}
+
+/* line 34, src/scss/_components/homepage/_main.scss */
+.main__content > * {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 40, src/scss/_components/homepage/_main.scss */
+.main__title {
+  padding-bottom: 39px;
+  font-weight: bold;
+  font-size: 41px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #040404;
+}
+
+/* line 49, src/scss/_components/homepage/_main.scss */
+.main__desc {
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  line-height: 33px;
+  color: #3b3b3b;
+}
+
+/* line 3, src/scss/_components/homepage/_about.scss */
+.about {
+  overflow: hidden;
+  position: relative;
+  padding-top: 138px;
+  padding-bottom: 135px;
+  background-image: url("../img/img-abbout-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 13, src/scss/_components/homepage/_about.scss */
+.about__bg {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 23, src/scss/_components/homepage/_about.scss */
+.about__bg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  -webkit-transform: translateX(45%);
+      -ms-transform: translateX(45%);
+          transform: translateX(45%);
+}
+
+/* line 32, src/scss/_components/homepage/_about.scss */
+.about__wrapper {
+  z-index: 2;
+  position: relative;
+  padding-left: 140px;
+}
+
+/* line 38, src/scss/_components/homepage/_about.scss */
+.about__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 536px;
+  min-height: 416px;
+  padding: 48px 95px 45px 18px;
+  -webkit-border-radius: 0 150px;
+          border-radius: 0 150px;
+  background: #003c5a;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* line 49, src/scss/_components/homepage/_about.scss */
+.about__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  max-width: 1226px;
+}
+
+/* line 55, src/scss/_components/homepage/_about.scss */
+.about__box-wrapper > div {
+  width: 50%;
+  padding-bottom: 75px;
+}
+
+/* line 59, src/scss/_components/homepage/_about.scss */
+.about__box-wrapper > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 64, src/scss/_components/homepage/_about.scss */
+.about__box-wrapper > div:nth-of-type(3) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 74, src/scss/_components/homepage/_about.scss */
+.about__box-title, .about__box-desc {
+  color: #ffffff;
+}
+
+/* line 79, src/scss/_components/homepage/_about.scss */
+.about__box-title {
+  padding-bottom: 43px;
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 0.07em;
+  line-height: 31px;
+}
+
+/* line 87, src/scss/_components/homepage/_about.scss */
+.about__box-desc {
+  padding-left: 36px;
+  font-size: 23px;
+  letter-spacing: 0.04em;
+}
+
+/* line 3, src/scss/_components/homepage/_moves.scss */
+.moves {
+  padding-top: 109px;
+  padding-bottom: 109px;
+  background-image: url("../img/img-moves-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 11, src/scss/_components/homepage/_moves.scss */
+.moves:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 21, src/scss/_components/homepage/_moves.scss */
+.moves__wrapper {
+  z-index: 2;
+  position: relative;
+  padding: 70px 57px;
+  background-color: rgba(255, 212, 0, 0.8);
+}
+
+/* line 28, src/scss/_components/homepage/_moves.scss */
+.moves__title {
+  padding-bottom: 67px;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  line-height: 54px;
+  color: #040404;
+}
+
+/* line 37, src/scss/_components/homepage/_moves.scss */
+.moves__desc {
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  line-height: 48px;
+  color: #3b3b3b;
+}
+
+/* line 43, src/scss/_components/homepage/_moves.scss */
+.moves__desc:not(:last-of-type) {
+  padding-bottom: 40px;
+}
+
+/* line 3, src/scss/_components/homepage/_makes.scss */
+.makes {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, src/scss/_components/homepage/_makes.scss */
+.makes__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 14, src/scss/_components/homepage/_makes.scss */
+.makes__bg:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #003c5a;
+  -webkit-clip-path: polygon(52% 0, 100% 81%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(52% 0, 100% 81%, 100% 100%, 0 100%, 0 0);
+}
+
+/* line 26, src/scss/_components/homepage/_makes.scss */
+.makes__wrapper {
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-left: 145px;
+  padding-top: 175px;
+  padding-bottom: 51px;
+}
+
+/* line 34, src/scss/_components/homepage/_makes.scss */
+.makes__wrapper-left, .makes__wrapper-right {
+  width: 50%;
+}
+
+/* line 39, src/scss/_components/homepage/_makes.scss */
+.makes__wrapper img {
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 47, src/scss/_components/homepage/_makes.scss */
+.makes__title, .makes__desc {
+  color: #ffffff;
+}
+
+/* line 52, src/scss/_components/homepage/_makes.scss */
+.makes__title {
+  padding-bottom: 101px;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  line-height: 61px;
+}
+
+/* line 60, src/scss/_components/homepage/_makes.scss */
+.makes__desc {
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  line-height: 33px;
+}
+
+/* line 65, src/scss/_components/homepage/_makes.scss */
+.makes__desc:not(:last-of-type) {
+  padding-bottom: 40px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
