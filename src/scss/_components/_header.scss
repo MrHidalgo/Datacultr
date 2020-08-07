@@ -1,0 +1,23 @@
+// HEADER :: START
+
+.header {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 70px;
+		padding-right: 90px;
+	}
+}
+
+// HEADER :: END
