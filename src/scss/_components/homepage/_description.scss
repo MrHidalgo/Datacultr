@@ -1,0 +1,79 @@
+// SECTION :: START
+
+.description {
+	padding-top: 167px;
+	padding-bottom: 167px;
+	background-image: url('../img/img-bg-illustration.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__box {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		max-width: 434px;
+		height: 500px;
+		padding: 15px 30px;
+		filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.16));
+
+		&:after {
+			content: '';
+			z-index: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#ffd400, 0.8);
+			clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+		}
+
+		&-wrapper {
+			display: flex;
+
+			> div {
+				width: 100%;
+				max-width: calc(100% / 3);
+
+				&:nth-of-type(2) {
+					.description__box {
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+
+				&:nth-of-type(3) {
+					.description__box {
+						margin-left: auto;
+						//margin-right: auto;
+					}
+				}
+			}
+		}
+
+		&-title,
+		&-desc {
+			z-index: 2;
+			position: relative;
+			color: #040404;
+		}
+
+		&-title {
+			padding-bottom: 24px;
+			font-weight: bold;
+			font-size: 22px;
+			letter-spacing: 0.04em;
+			text-align: center;
+		}
+
+		&-desc {
+			font-size: 20px;
+			letter-spacing: 0.04em;
+		}
+	}
+}
+
+// SECTION :: END

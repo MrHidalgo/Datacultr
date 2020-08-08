@@ -1,0 +1,44 @@
+// SECTION :: START
+
+.partners {
+	padding-top: 152px;
+	padding-bottom: 224px;
+	background-image: url('../img/img-bg-illustration.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__wrapper {
+		width: 100%;
+		max-width: 1494px;
+	}
+
+	&__title {
+		padding-bottom: 50px;
+		font-size: 35px;
+		letter-spacing: 0.06em;
+		line-height: 48px;
+		color: #3b3b3b;
+	}
+
+	&__box {
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+
+			> div {
+				width: 100%;
+				max-width: calc(100% / 3);
+				padding-bottom: 30px;
+			}
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+// SECTION :: END

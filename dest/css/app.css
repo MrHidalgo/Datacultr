@@ -360,7 +360,7 @@ picture {
   position: relative;
   padding-top: 138px;
   padding-bottom: 135px;
-  background-image: url("../img/img-abbout-bg.png");
+  background-image: url("../img/img-bg-illustration.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -497,6 +497,7 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_moves.scss */
 .moves {
+  position: relative;
   padding-top: 109px;
   padding-bottom: 109px;
   background-image: url("../img/img-moves-bg.jpg");
@@ -506,7 +507,7 @@ picture {
           background-size: cover;
 }
 
-/* line 11, src/scss/_components/homepage/_moves.scss */
+/* line 12, src/scss/_components/homepage/_moves.scss */
 .moves:after {
   content: '';
   position: absolute;
@@ -517,7 +518,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 21, src/scss/_components/homepage/_moves.scss */
+/* line 22, src/scss/_components/homepage/_moves.scss */
 .moves__wrapper {
   z-index: 2;
   position: relative;
@@ -525,7 +526,7 @@ picture {
   background-color: rgba(255, 212, 0, 0.8);
 }
 
-/* line 28, src/scss/_components/homepage/_moves.scss */
+/* line 29, src/scss/_components/homepage/_moves.scss */
 .moves__title {
   padding-bottom: 67px;
   font-weight: bold;
@@ -535,7 +536,7 @@ picture {
   color: #040404;
 }
 
-/* line 37, src/scss/_components/homepage/_moves.scss */
+/* line 38, src/scss/_components/homepage/_moves.scss */
 .moves__desc {
   font-size: 24px;
   letter-spacing: 0.06em;
@@ -543,7 +544,7 @@ picture {
   color: #3b3b3b;
 }
 
-/* line 43, src/scss/_components/homepage/_moves.scss */
+/* line 44, src/scss/_components/homepage/_moves.scss */
 .moves__desc:not(:last-of-type) {
   padding-bottom: 40px;
 }
@@ -628,6 +629,277 @@ picture {
 /* line 65, src/scss/_components/homepage/_makes.scss */
 .makes__desc:not(:last-of-type) {
   padding-bottom: 40px;
+}
+
+/* line 3, src/scss/_components/homepage/_description.scss */
+.description {
+  padding-top: 167px;
+  padding-bottom: 167px;
+  background-image: url("../img/img-bg-illustration.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 11, src/scss/_components/homepage/_description.scss */
+.description__box {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 434px;
+  height: 500px;
+  padding: 15px 30px;
+  -webkit-filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+/* line 22, src/scss/_components/homepage/_description.scss */
+.description__box:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 212, 0, 0.8);
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+/* line 34, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 37, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+}
+
+/* line 42, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div:nth-of-type(2) .description__box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 49, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div:nth-of-type(3) .description__box {
+  margin-left: auto;
+}
+
+/* line 57, src/scss/_components/homepage/_description.scss */
+.description__box-title, .description__box-desc {
+  z-index: 2;
+  position: relative;
+  color: #040404;
+}
+
+/* line 64, src/scss/_components/homepage/_description.scss */
+.description__box-title {
+  padding-bottom: 24px;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+/* line 72, src/scss/_components/homepage/_description.scss */
+.description__box-desc {
+  font-size: 20px;
+  letter-spacing: 0.04em;
+}
+
+/* line 3, src/scss/_components/homepage/_expands.scss */
+.expands {
+  padding-top: 129px;
+  padding-bottom: 129px;
+  background-color: #003C5A;
+}
+
+/* line 8, src/scss/_components/homepage/_expands.scss */
+.expands__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1640px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+/* line 16, src/scss/_components/homepage/_expands.scss */
+.expands__wrapper-left {
+  position: relative;
+  width: 610px;
+  min-height: 100%;
+}
+
+/* line 21, src/scss/_components/homepage/_expands.scss */
+.expands__wrapper-left:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-expand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 35, src/scss/_components/homepage/_expands.scss */
+.expands__wrapper-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding: 104px 153px;
+}
+
+/* line 43, src/scss/_components/homepage/_expands.scss */
+.expands__title {
+  padding-bottom: 36px;
+  font-size: 35px;
+  letter-spacing: 0.04em;
+  line-height: 65px;
+  color: #040404;
+}
+
+/* line 51, src/scss/_components/homepage/_expands.scss */
+.expands__desc {
+  font-size: 26px;
+  letter-spacing: 0.06em;
+  line-height: 48px;
+  color: #3b3b3b;
+}
+
+/* line 3, src/scss/_components/homepage/_partners.scss */
+.partners {
+  padding-top: 152px;
+  padding-bottom: 224px;
+  background-image: url("../img/img-bg-illustration.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 11, src/scss/_components/homepage/_partners.scss */
+.partners__wrapper {
+  width: 100%;
+  max-width: 1494px;
+}
+
+/* line 16, src/scss/_components/homepage/_partners.scss */
+.partners__title {
+  padding-bottom: 50px;
+  font-size: 35px;
+  letter-spacing: 0.06em;
+  line-height: 48px;
+  color: #3b3b3b;
+}
+
+/* line 25, src/scss/_components/homepage/_partners.scss */
+.partners__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 29, src/scss/_components/homepage/_partners.scss */
+.partners__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-bottom: 30px;
+}
+
+/* line 36, src/scss/_components/homepage/_partners.scss */
+.partners__box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 3, src/scss/_components/homepage/_awards.scss */
+.awards {
+  padding-top: 56px;
+  padding-bottom: 116px;
+  background-color: #fdf5e0;
+}
+
+/* line 8, src/scss/_components/homepage/_awards.scss */
+.awards__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 11, src/scss/_components/homepage/_awards.scss */
+.awards__wrapper-left {
+  width: 100%;
+  max-width: 847px;
+}
+
+/* line 16, src/scss/_components/homepage/_awards.scss */
+.awards__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 25, src/scss/_components/homepage/_awards.scss */
+.awards__title {
+  padding-bottom: 62px;
+}
+
+/* line 29, src/scss/_components/homepage/_awards.scss */
+.awards__title, .awards__desc {
+  font-size: 35px;
+  letter-spacing: 0.06em;
+  line-height: 51px;
+  color: #3b3b3b;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
