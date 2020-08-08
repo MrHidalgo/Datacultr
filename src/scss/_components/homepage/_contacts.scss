@@ -1,0 +1,103 @@
+// SECTION :: START
+
+.contacts {
+	padding-top: 89px;
+	padding-bottom: 58px;
+	background-image: url('../img/img-contacts-bg@2x.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__title {
+		padding-bottom: 42px;
+		font-size: 35px;
+		letter-spacing: 0.04em;
+		color: #040404;
+	}
+
+	&__desc {
+		font-size: 27px;
+		letter-spacing: 0.17em;
+		line-height: 54px;
+		color: #030303;
+
+		&:last-of-type {
+			padding-bottom: 73px;
+		}
+	}
+
+	&__form {
+		display: flex;
+		background-color: #ffffff;
+
+		&-left,
+		&-right {
+			width: 100%;
+			max-width: 50%;
+		}
+
+		&-left {
+			display: flex;
+			flex-direction: column;
+			padding: 51px 59px 21px 51px;
+		}
+
+		&-right {
+			background-image: url('../img/img-contacts.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		&-field {
+			padding-bottom: 25px;
+
+			&--input {}
+
+			&--btn {
+				.c-btn {
+					min-width: 249px;
+					height: 70px;
+
+					span {
+						font-size: 27px;
+						text-transform: capitalize;
+					}
+				}
+			}
+
+			label {
+				display: flex;
+				padding-bottom: 19px;
+				font-size: 25px;
+				color: #030303;
+			}
+
+			input,
+			textarea {
+				outline: none;
+				position: relative;
+				width: 100%;
+				padding: 0 20px;
+				border-radius: 5px;
+				border: 1px solid #aeaeae;
+				box-shadow: none;
+				background-color: #fff;
+				font-size: 18px;
+			}
+
+			input {
+				height: 60px;
+			}
+
+			textarea {
+				resize: none;
+				height: 143px;
+				padding: 15px;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+// SECTION :: END
