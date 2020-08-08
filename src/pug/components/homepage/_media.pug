@@ -1,0 +1,24 @@
+// SECTION :: START
+
+section#media.media
+	.c-grid
+		.media__wrapper
+
+			p.media__title Media Coverage
+
+			.media__slider
+				a.media__slider-btn.media__slider-btn--prev(href="#")
+					img(src="img/arrow.svg" alt="")
+				a.media__slider-btn.media__slider-btn--next(href="#")
+					img(src="img/arrow.svg" alt="")
+
+				mixin swiperContent()
+					each val, idx in [1,2,3,4,5]
+						.swiper-slide(style='background-image: url("img/img-media.jpg")')
+							.swiper-slide-head
+							.swiper-slide-body
+								p Revamping the Loan Recollection Exercise With Technology To Drive Recovery Strategy
+
+				+swiper('mediaCarousel', 'swiperContent', false, false, false)
+
+// SECTION :: END
