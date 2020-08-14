@@ -1,12 +1,16 @@
 // SECTION :: START
 
 .partners {
-	padding-top: 152px;
-	padding-bottom: 224px;
+	padding-top: 150px;
+	padding-bottom: 182px;
 	background-image: url('../img/img-bg-illustration.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
+	.c-grid {
+		max-width: 1670px;
+	}
 
 	&__wrapper {
 		width: 100%;

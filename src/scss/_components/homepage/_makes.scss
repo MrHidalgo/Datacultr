@@ -19,7 +19,7 @@
 			width: 100%;
 			height: 100%;
 			background-color: #003c5a;
-			clip-path: polygon(52% 0, 100% 81%, 100% 100%, 0 100%, 0 0);
+			clip-path: polygon(57% 0, 100% 82%, 100% 100%, 0 100%, 0 0);
 		}
 	}
 
@@ -27,13 +27,15 @@
 		z-index: 2;
 		display: flex;
 		position: relative;
-		padding-left: 145px;
-		padding-top: 175px;
-		padding-bottom: 51px;
+		padding-left: 140px;
+		padding-top: 151px;
 
-		&-left,
+		&-left {
+			width: 45%;
+		}
 		&-right {
-			width: 50%;
+			width: 55%;
+			padding-bottom: 66px;
 		}
 
 		img {
@@ -50,7 +52,7 @@
 	}
 
 	&__title {
-		padding-bottom: 101px;
+		padding-bottom: 92px;
 		font-weight: bold;
 		font-size: 40px;
 		letter-spacing: 0.04em;
@@ -58,12 +60,14 @@
 	}
 
 	&__desc {
+		width: 100%;
+		max-width: 860px;
 		font-size: 24px;
 		letter-spacing: 0.06em;
 		line-height: 33px;
 
 		&:not(:last-of-type) {
-			padding-bottom: 40px;
+			padding-bottom: 33px;
 		}
 	}
 }

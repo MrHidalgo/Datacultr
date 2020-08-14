@@ -1,28 +1,33 @@
 // SECTION :: START
 
 .contacts {
-	padding-top: 89px;
-	padding-bottom: 58px;
+	padding-top: 85px;
+	padding-bottom: 41px;
 	background-image: url('../img/img-contacts-bg@2x.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 
+	.c-grid {
+		max-width: 1670px;
+	}
+
 	&__title {
-		padding-bottom: 42px;
+		padding-bottom: 28px;
 		font-size: 35px;
 		letter-spacing: 0.04em;
 		color: #040404;
 	}
 
 	&__desc {
+		white-space: nowrap;
 		font-size: 27px;
 		letter-spacing: 0.17em;
 		line-height: 54px;
 		color: #030303;
 
 		&:last-of-type {
-			padding-bottom: 73px;
+			padding-bottom: 62px;
 		}
 	}
 
@@ -39,7 +44,7 @@
 		&-left {
 			display: flex;
 			flex-direction: column;
-			padding: 51px 59px 21px 51px;
+			padding: 51px 67px 21px 51px;
 		}
 
 		&-right {
@@ -68,7 +73,7 @@
 
 			label {
 				display: flex;
-				padding-bottom: 19px;
+				padding-bottom: 14px;
 				font-size: 25px;
 				color: #030303;
 			}

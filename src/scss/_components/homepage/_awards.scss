@@ -5,25 +5,31 @@
 	padding-bottom: 116px;
 	background-color: #fdf5e0;
 
+	.c-grid {
+		max-width: 1670px;
+	}
+
 	&__wrapper {
 		display: flex;
 
 		&-left {
-			width: 100%;
-			max-width: 847px;
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-right: 102px;
 		}
 
 		&-right {
 			display: flex;
 			justify-content: space-between;
-			flex: 1;
-			min-width: 1px;
-			max-width: 100%;
+			width: 100%;
+			max-width: 680px;
+			padding-top: 40px;
 		}
 	}
 
 	&__title {
-		padding-bottom: 62px;
+		padding-bottom: 50px;
 	}
 
 	&__title,

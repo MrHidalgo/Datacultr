@@ -4,7 +4,7 @@
 	overflow: hidden;
 	position: relative;
 	padding-top: 138px;
-	padding-bottom: 135px;
+	padding-bottom: 111px;
 	background-image: url('../img/img-bg-illustration.png');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -25,7 +25,7 @@
 			max-width: 100%;
 			height: auto;
 			max-height: 100%;
-			transform: translateX(45%);
+			transform: translateX(39%) translateY(6px);
 		}
 	}
 
@@ -77,17 +77,32 @@
 		}
 
 		&-title {
-			padding-bottom: 43px;
-			font-weight: bold;
-			font-size: 23px;
-			letter-spacing: 0.07em;
-			line-height: 31px;
+			display: flex;
+			padding-bottom: 38px;
+
+			> span {
+				font-weight: bold;
+				font-size: 23px;
+				letter-spacing: 0.07em;
+				line-height: 31px;
+				text-transform: uppercase;
+
+				&:nth-of-type(1) {
+					width: 36px;
+				}
+				&:nth-of-type(2) {
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
+				}
+			}
 		}
 
 		&-desc {
 			padding-left: 36px;
 			font-size: 23px;
 			letter-spacing: 0.04em;
+			line-height: 1.3;
 		}
 	}
 }

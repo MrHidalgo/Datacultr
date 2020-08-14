@@ -8,8 +8,16 @@
 	background-position: center;
 	background-size: cover;
 
+	.c-grid {
+		max-width: 1870px;
+	}
+
 	&__title {
-		padding-bottom: 88px;
+		width: 100%;
+		max-width: 1640px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 82px;
 		font-size: 35px;
 		letter-spacing: 0.06em;
 		line-height: 48px;
