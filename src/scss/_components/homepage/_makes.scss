@@ -20,6 +20,9 @@
 			height: 100%;
 			background-color: #003c5a;
 			clip-path: polygon(57% 0, 100% 82%, 100% 100%, 0 100%, 0 0);
+			@include adaptive(767) {
+				clip-path: polygon(100% 0, 100% 82%, 100% 100%, 0 100%, 0 0);
+			}
 		}
 	}
 
@@ -40,11 +43,20 @@
 			align-items: center;
 			padding-top: 50px;
 		}
+		@include adaptive(767) {
+			flex-wrap: wrap;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 
 		&-left {
 			width: 45%;
 			@include adaptive(1599) {
 				padding-bottom: 75px;
+			}
+			@include adaptive(767) {
+				width: 100%;
+				padding-bottom: 50px;
 			}
 		}
 
@@ -53,6 +65,10 @@
 			padding-bottom: 66px;
 			@include adaptive(1599) {
 				padding-bottom: 0;
+			}
+			@include adaptive(767) {
+				width: 100%;
+				padding-bottom: 50px;
 			}
 		}
 

@@ -10,6 +10,10 @@
 		@include adaptive(1279) {
 			font-size: 12px;
 		}
+		@include adaptive(767) {
+			line-height: 1.4;
+			text-align: center;
+		}
 	}
 }
 

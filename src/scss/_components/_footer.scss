@@ -10,6 +10,9 @@
 	&__wrapper {
 		&-1 {
 			height: 60px;
+			@include adaptive(767) {
+				height: 50px;
+			}
 		}
 
 		&-2 {
@@ -26,6 +29,9 @@
 			@include adaptive(1279) {
 				min-height: 55px;
 			}
+			@include adaptive(767) {
+				min-width: 50px;
+			}
 		}
 	}
 
@@ -33,16 +39,41 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__col {
 		display: flex;
+		@include adaptive(767) {
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+
+		&-1 {
+			@include adaptive(767) {
+				width: 100%;
+				padding-bottom: 30px;
+			}
+		}
+
+		&-2 {
+			@include adaptive(767) {
+				flex-direction: column;
+			}
+		}
 	}
 
 	&__nav {
 		display: flex;
 		flex-direction: column;
 		padding-right: 123px;
+		@include adaptive(767) {
+			padding-right: 0;
+			padding-bottom: 30px;
+		}
 
 		&-link {
 			display: flex;
@@ -58,6 +89,9 @@
 			}
 			@include adaptive(1279) {
 				font-size: 16px;
+			}
+			@include adaptive(767) {
+				justify-content: center;
 			}
 
 			&:not(:last-of-type) {

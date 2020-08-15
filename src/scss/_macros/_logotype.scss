@@ -6,6 +6,9 @@
 		@include adaptive(1365) {
 			max-width: 175px;
 		}
+		@include adaptive(767) {
+			max-width: 125px;
+		}
 	}
 
 	&__img {

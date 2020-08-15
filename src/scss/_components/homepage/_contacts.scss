@@ -63,11 +63,17 @@
 	&__form {
 		display: flex;
 		background-color: #ffffff;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 
 		&-left,
 		&-right {
 			width: 100%;
 			max-width: 50%;
+			@include adaptive(767) {
+				max-width: 100%;
+			}
 		}
 
 		&-left {
@@ -103,6 +109,9 @@
 					}
 					@include adaptive(1365) {
 						height: 50px;
+					}
+					@include adaptive(767) {
+						width: 100%;
 					}
 
 					span {

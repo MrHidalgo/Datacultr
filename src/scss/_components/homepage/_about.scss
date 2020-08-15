@@ -17,6 +17,10 @@
 		padding-top: 75px;
 		padding-bottom: 75px;
 	}
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 	&__bg {
 		position: absolute;
@@ -79,6 +83,9 @@
 		@include adaptive(1023) {
 			padding: 20px 20px 50px;
 		}
+		@include adaptive(767) {
+			padding-right: 50px;
+		}
 
 		&-wrapper {
 			display: flex;
@@ -102,6 +109,9 @@
 					padding-bottom: 50px;
 					width: 100%;
 					max-width: calc((100% - 30px) / 2);
+				}
+				@include adaptive(767) {
+					max-width: 100%;
 				}
 
 				&:nth-of-type(2) {

@@ -33,6 +33,9 @@
 		@include adaptive(1023) {
 			padding-left: 15px;
 		}
+		@include adaptive(767) {
+			padding-right: 15px;
+		}
 	}
 
 	&__content {
@@ -41,6 +44,9 @@
 		max-width: 748px;
 		@include adaptive(1023) {
 			max-width: 70%;
+		}
+		@include adaptive(767) {
+			max-width: 100%;
 		}
 
 		&:after {
@@ -64,6 +70,11 @@
 				left: -300px;
 				width: 900px;
 				height: 950px;
+			}
+			@include adaptive(767) {
+				left: -300px;
+				width: 1024px;
+				height: 1024px;
 			}
 		}
 
@@ -94,6 +105,9 @@
 		}
 		@include adaptive(1023) {
 			line-height: 1.8;
+		}
+		@include adaptive(767) {
+			font-size: 26px;
 		}
 	}
 

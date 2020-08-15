@@ -15,6 +15,10 @@
 		padding-top: 75px;
 		padding-bottom: 75px;
 	}
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 	.c-grid {
 		max-width: 1870px;
@@ -37,6 +41,9 @@
 		@include adaptive(1023) {
 			font-size: 26px;
 		}
+		@include adaptive(767) {
+			font-size: 24px;
+		}
 	}
 
 	&__slider {
@@ -47,6 +54,10 @@
 		@include adaptive(1599) {
 			padding-left: 75px;
 			padding-right: 75px;
+		}
+		@include adaptive(767) {
+			padding-left: 30px;
+			padding-right: 30px;
 		}
 
 		&-btn {
@@ -73,6 +84,9 @@
 				@include adaptive(1365) {
 					max-width: 35px;
 				}
+				@include adaptive(767) {
+					max-width: 20px;
+				}
 			}
 		}
 	}
@@ -95,6 +109,9 @@
 				min-height: 93px;
 				padding: 20px;
 				background-color: rgba(#fff, 0.82);
+				@include adaptive(767) {
+					padding: 15px;
+				}
 
 				p {
 					font-weight: bold;
@@ -104,6 +121,9 @@
 					color: #000;
 					@include adaptive(1279) {
 						font-size: 14px;
+					}
+					@include adaptive(767) {
+						line-height: 2;
 					}
 				}
 			}

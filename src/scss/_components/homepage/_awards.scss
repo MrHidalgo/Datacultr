@@ -27,6 +27,9 @@
 			@include adaptive(1365) {
 				padding-right: 75px;
 			}
+			@include adaptive(767) {
+				padding-right: 0;
+			}
 		}
 
 		&-right {
@@ -44,6 +47,12 @@
 			}
 			@include adaptive(1023) {
 				max-width: 100%;
+			}
+			@include adaptive(767) {
+				> div {
+					width: 100%;
+					max-width: calc((100% - 15px) / 2);
+				}
 			}
 
 			img {
@@ -75,6 +84,9 @@
 		}
 		@include adaptive(1279) {
 			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 20px;
 		}
 	}
 }
