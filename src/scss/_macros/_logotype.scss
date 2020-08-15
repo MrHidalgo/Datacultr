@@ -3,6 +3,9 @@
 .logo {
 	&__btn {
 		display: flex;
+		@include adaptive(1365) {
+			max-width: 175px;
+		}
 	}
 
 	&__img {

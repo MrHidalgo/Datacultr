@@ -7,6 +7,14 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	@include adaptive(1599) {
+		padding-top: 125px;
+		padding-bottom: 125px;
+	}
+	@include adaptive(1365) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 
 	.c-grid {
 		max-width: 1675px;
@@ -22,6 +30,9 @@
 		height: 500px;
 		padding: 15px 30px;
 		filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.16));
+		@include adaptive(1365) {
+			height: 450px;
+		}
 
 		&:after {
 			content: '';
@@ -37,10 +48,16 @@
 
 		&-wrapper {
 			display: flex;
+			@include adaptive(1365) {
+				justify-content: space-between;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 3);
+				@include adaptive(1365) {
+					max-width: calc((100% - 100px) / 3);
+				}
 
 				&:nth-of-type(2) {
 					.description__box {
@@ -52,7 +69,6 @@
 				&:nth-of-type(3) {
 					.description__box {
 						margin-left: auto;
-						//margin-right: auto;
 					}
 				}
 			}
@@ -71,11 +87,20 @@
 			font-size: 22px;
 			letter-spacing: 0.04em;
 			text-align: center;
+			@include adaptive(1365) {
+				font-size: 20px;
+			}
 		}
 
 		&-desc {
 			font-size: 20px;
 			letter-spacing: 0.04em;
+			@include adaptive(1599) {
+				font-size: 18px;
+			}
+			@include adaptive(1365) {
+				font-size: 16px;
+			}
 		}
 	}
 }

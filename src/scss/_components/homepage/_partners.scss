@@ -7,6 +7,14 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	@include adaptive(1599) {
+		padding-top: 100px;
+		padding-bottom: 70px;
+	}
+	@include adaptive(1365) {
+		padding-top: 75px;
+		padding-bottom: 45px;
+	}
 
 	.c-grid {
 		max-width: 1670px;
@@ -23,17 +31,26 @@
 		letter-spacing: 0.06em;
 		line-height: 48px;
 		color: #3b3b3b;
+		@include adaptive(1599) {
+			font-size: 30px;
+		}
 	}
 
 	&__box {
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap;
+			@include adaptive(1365) {
+				justify-content: space-between;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 3);
 				padding-bottom: 30px;
+				@include adaptive(1365) {
+					max-width: calc((100% - 200px) / 3);
+				}
 			}
 		}
 
@@ -41,6 +58,9 @@
 			display: block;
 			max-width: 100%;
 			height: auto;
+			@include adaptive(1365) {
+				transform: scale(0.9);
+			}
 		}
 	}
 }

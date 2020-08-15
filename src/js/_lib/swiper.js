@@ -22,12 +22,12 @@ const initSwiper = () => {
 				spaceBetween: 98
 			},
 			// when window width is >= 480px
-			480: {
+			1024: {
 				slidesPerView: 3,
-				spaceBetween: 98
+				spaceBetween: 50
 			},
 			// when window width is >= 640px
-			640: {
+			1366: {
 				slidesPerView: 3,
 				spaceBetween: 98
 			}

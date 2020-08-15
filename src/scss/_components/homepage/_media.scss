@@ -7,6 +7,10 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	@include adaptive(1599) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 
 	.c-grid {
 		max-width: 1870px;
@@ -22,6 +26,10 @@
 		letter-spacing: 0.06em;
 		line-height: 48px;
 		color: #3b3b3b;
+		@include adaptive(1599) {
+			padding-bottom: 50px;
+			font-size: 30px;
+		}
 	}
 
 	&__slider {
@@ -29,6 +37,10 @@
 		position: relative;
 		padding-left: 100px;
 		padding-right: 100px;
+		@include adaptive(1599) {
+			padding-left: 75px;
+			padding-right: 75px;
+		}
 
 		&-btn {
 			position: absolute;
@@ -46,6 +58,15 @@
 					transform: scaleX(-1);
 				}
 			}
+
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				@include adaptive(1365) {
+					max-width: 35px;
+				}
+			}
 		}
 	}
 
@@ -56,8 +77,6 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
-
-			&-head {}
 
 			&-body {
 				display: flex;

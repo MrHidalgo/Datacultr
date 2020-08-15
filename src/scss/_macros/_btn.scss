@@ -16,6 +16,9 @@
 	border-radius: 4px;
 	background-color: #003c5a;
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	@include adaptive(1365) {
+		height: 40px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -28,6 +31,9 @@
 		letter-spacing: 0.03em;
 		color: #fff;
 		text-transform: uppercase;
+		@include adaptive(1365) {
+			font-size: 16px;
+		}
 	}
 }
 

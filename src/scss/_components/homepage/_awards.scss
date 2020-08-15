@@ -4,6 +4,10 @@
 	padding-top: 56px;
 	padding-bottom: 116px;
 	background-color: #fdf5e0;
+	@include adaptive(1599) {
+		padding-top: 50px;
+		padding-bottom: 75px;
+	}
 
 	.c-grid {
 		max-width: 1670px;
@@ -17,6 +21,9 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding-right: 102px;
+			@include adaptive(1365) {
+				padding-right: 75px;
+			}
 		}
 
 		&-right {
@@ -25,6 +32,9 @@
 			width: 100%;
 			max-width: 680px;
 			padding-top: 40px;
+			@include adaptive(1599) {
+				max-width: 600px;
+			}
 		}
 	}
 
@@ -38,6 +48,12 @@
 		letter-spacing: 0.06em;
 		line-height: 51px;
 		color: #3b3b3b;
+		@include adaptive(1599) {
+			font-size: 30px;
+		}
+		@include adaptive(1365) {
+			font-size: 26px;
+		}
 	}
 }
 
