@@ -10,6 +10,9 @@
 	@include adaptive(1535) {
 		background-position: left center;
 	}
+	@include adaptive(1023) {
+		background-position: center;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -24,12 +27,21 @@
 			padding-top: 200px;
 			padding-left: 30px;
 		}
+		@include adaptive(1279) {
+			padding-top: 150px;
+		}
+		@include adaptive(1023) {
+			padding-left: 15px;
+		}
 	}
 
 	&__content {
 		position: relative;
 		width: 100%;
 		max-width: 748px;
+		@include adaptive(1023) {
+			max-width: 70%;
+		}
 
 		&:after {
 			content: '';
@@ -47,6 +59,11 @@
 			@include adaptive(1365) {
 				width: 1000px;
 				height: 1000px;
+			}
+			@include adaptive(1023) {
+				left: -300px;
+				width: 900px;
+				height: 950px;
 			}
 		}
 
@@ -71,6 +88,13 @@
 		@include adaptive(1365) {
 			font-size: 30px;
 		}
+		@include adaptive(1279) {
+			padding-bottom: 30px;
+			line-height: 1.5;
+		}
+		@include adaptive(1023) {
+			line-height: 1.8;
+		}
 	}
 
 	&__desc {
@@ -90,6 +114,14 @@
 
 			br {
 				display: inline-block;
+			}
+		}
+		@include adaptive(1279) {
+			font-size: 16px;
+		}
+		@include adaptive(1023) {
+			br {
+				display: none;
 			}
 		}
 	}

@@ -23,6 +23,9 @@
 			align-items: center;
 			min-height: 80px;
 			background-color: #707070;
+			@include adaptive(1279) {
+				min-height: 55px;
+			}
 		}
 	}
 
@@ -52,6 +55,9 @@
 			}
 			@include adaptive(1365) {
 				font-size: 20px;
+			}
+			@include adaptive(1279) {
+				font-size: 16px;
 			}
 
 			&:not(:last-of-type) {

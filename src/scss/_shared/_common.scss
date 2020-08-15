@@ -7,6 +7,9 @@
 		font-size: 14px;
 		line-height: 95px;
 		color: #fff;
+		@include adaptive(1279) {
+			font-size: 12px;
+		}
 	}
 }
 
@@ -19,6 +22,9 @@
 
 		&:not(:last-of-type) {
 			padding-bottom: 23px;
+			@include adaptive(1279) {
+				padding-bottom: 20px;
+			}
 		}
 	}
 
@@ -34,10 +40,25 @@
 		@include adaptive(1365) {
 			font-size: 20px;
 		}
+		@include adaptive(1279) {
+			font-size: 16px;
+		}
 
 		div {
 			display: flex;
 			width: 50px;
+			@include adaptive(1279) {
+				width: 40px;
+			}
+
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				@include adaptive(1279) {
+					transform: scale(0.8);
+				}
+			}
 		}
 	}
 }

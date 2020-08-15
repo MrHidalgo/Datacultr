@@ -50,17 +50,18 @@ var initSwiper = function initSwiper() {
 		slidesPerView: 3,
 		spaceBetween: 98,
 		breakpoints: {
-			// when window width is >= 320px
 			320: {
-				slidesPerView: 3,
-				spaceBetween: 98
+				slidesPerView: 1,
+				spaceBetween: 15
 			},
-			// when window width is >= 480px
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 30
+			},
 			1024: {
 				slidesPerView: 3,
-				spaceBetween: 50
+				spaceBetween: 30
 			},
-			// when window width is >= 640px
 			1366: {
 				slidesPerView: 3,
 				spaceBetween: 98

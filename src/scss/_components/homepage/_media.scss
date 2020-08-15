@@ -11,6 +11,10 @@
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
+	@include adaptive(1023) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
 
 	.c-grid {
 		max-width: 1870px;
@@ -29,6 +33,9 @@
 		@include adaptive(1599) {
 			padding-bottom: 50px;
 			font-size: 30px;
+		}
+		@include adaptive(1023) {
+			font-size: 26px;
 		}
 	}
 
@@ -95,6 +102,9 @@
 					letter-spacing: 0.06em;
 					line-height: 30px;
 					color: #000;
+					@include adaptive(1279) {
+						font-size: 14px;
+					}
 				}
 			}
 		}

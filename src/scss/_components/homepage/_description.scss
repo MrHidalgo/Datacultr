@@ -15,6 +15,10 @@
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
+	@include adaptive(1279) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
 
 	.c-grid {
 		max-width: 1675px;
@@ -32,6 +36,10 @@
 		filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.16));
 		@include adaptive(1365) {
 			height: 450px;
+		}
+		@include adaptive(1023) {
+			max-width: 400px;
+			height: 400px;
 		}
 
 		&:after {
@@ -51,12 +59,21 @@
 			@include adaptive(1365) {
 				justify-content: space-between;
 			}
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 3);
 				@include adaptive(1365) {
 					max-width: calc((100% - 100px) / 3);
+				}
+				@include adaptive(1279) {
+					max-width: calc((100% - 30px) / 3);
+				}
+				@include adaptive(1023) {
+					max-width: 100%;
 				}
 
 				&:nth-of-type(2) {
@@ -90,6 +107,9 @@
 			@include adaptive(1365) {
 				font-size: 20px;
 			}
+			@include adaptive(1279) {
+				font-size: 18px;
+			}
 		}
 
 		&-desc {
@@ -100,6 +120,9 @@
 			}
 			@include adaptive(1365) {
 				font-size: 16px;
+			}
+			@include adaptive(1279) {
+				font-size: 14px;
 			}
 		}
 	}

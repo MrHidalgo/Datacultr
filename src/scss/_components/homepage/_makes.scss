@@ -36,6 +36,10 @@
 		@include adaptive(1365) {
 			padding-left: 30px;
 		}
+		@include adaptive(1279) {
+			align-items: center;
+			padding-top: 50px;
+		}
 
 		&-left {
 			width: 45%;
@@ -79,6 +83,11 @@
 			padding-bottom: 50px;
 			font-size: 30px;
 		}
+		@include adaptive(1279) {
+			padding-bottom: 35px;
+			line-height: 1.7;
+			font-size: 26px;
+		}
 	}
 
 	&__desc {
@@ -92,6 +101,9 @@
 		}
 		@include adaptive(1365) {
 			font-size: 18px;
+		}
+		@include adaptive(1279) {
+			font-size: 16px;
 		}
 
 		&:not(:last-of-type) {

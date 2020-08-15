@@ -14,6 +14,10 @@
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+	@include adaptive(1023) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	&__wrapper {
 		display: flex;
