@@ -3,4 +3,7 @@ ProjectTitle: Datacultr
 PageList:
 - file: index.html
   titleName: Home
+  ready: 100
+- file: about.html
+  titleName: About Us
   ready: 1
