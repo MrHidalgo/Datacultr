@@ -379,7 +379,7 @@ picture {
   border: none;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  background-color: #003c5a;
+  background-color: #07720a;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
@@ -787,7 +787,7 @@ picture {
   height: 1080px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background-color: rgba(255, 212, 0, 0.8);
+  background-color: rgba(255, 212, 0, 0.9);
 }
 
 @media screen and (max-width: 1599px) {
@@ -2153,6 +2153,14 @@ picture {
 
 /* line 53, src/scss/_components/homepage/_partners.scss */
 .partners__box-wrapper > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   max-width: -webkit-calc(100% / 3);
   max-width: calc(100% / 3);
@@ -2183,15 +2191,18 @@ picture {
   }
 }
 
-/* line 69, src/scss/_components/homepage/_partners.scss */
+/* line 71, src/scss/_components/homepage/_partners.scss */
 .partners__box img {
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 69, src/scss/_components/homepage/_partners.scss */
+  /* line 71, src/scss/_components/homepage/_partners.scss */
   .partners__box img {
     -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
