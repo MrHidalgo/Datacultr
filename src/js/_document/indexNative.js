@@ -23,6 +23,7 @@
 
 		// lib
 		initSwiper();
+		initValidation();
 		// ==========================================
 
 		// callback

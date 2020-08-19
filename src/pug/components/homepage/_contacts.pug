@@ -11,25 +11,34 @@ section#contacts.contacts
 			p.contacts__desc If you are from the media, please reach out to pr@datacultr.com
 			p.contacts__desc If you want to work with us, send us your resume at jobs@datacultr.com
 
-			form.contacts__form(action='' method='' autocomplete='off')
+			form#contactForm.contacts__form(action='' method='' autocomplete='off')
 				.contacts__form-left
 
 					.contacts__form-field.contacts__form-field--input
 						label(for='form-name') Your Name
-						input(type='text' name='' id='form-name')
+						input(type='text' name='name' id='form-name')
 					.contacts__form-field.contacts__form-field--input
 						label(for='form-phone') Your Phone
-						input(type='tel' name='' id='form-phone')
+						input(type='tel' name='phone' id='form-phone')
 					.contacts__form-field.contacts__form-field--input
 						label(for='form-email') Your Email
-						input(type='email' name='' id='form-email')
+						input(type='email' name='email' id='form-email')
 					.contacts__form-field.contacts__form-field--input
 						label(for='form-message') Message
-						textarea(name='' id='form-message')
+						textarea(name='message' id='form-message')
 					.contacts__form-field.contacts__form-field--btn
 						.c-btn__wrapper
 							button.c-btn(type='submit')
 								span Connect
+
+					.contacts__form-loader
+						#bowlG
+							#bowl_ringG
+								.ball_holderG
+									.ballG
+
+					.contacts__form-message
+						p Your application has been sent successfully. We will contact you for confirmation shortly.
 
 				.contacts__form-right
 

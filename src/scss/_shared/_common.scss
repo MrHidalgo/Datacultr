@@ -38,6 +38,7 @@
 		font-size: 24px;
 		letter-spacing: 0.05em;
 		color: #040404;
+		@include transition(color);
 		@include adaptive(1599) {
 			font-size: 22px;
 		}
@@ -46,6 +47,26 @@
 		}
 		@include adaptive(1279) {
 			font-size: 16px;
+		}
+
+		&.social__link--facebook {
+			&:hover {
+				color: #3b5998;
+			}
+		}
+		&.social__link--linkedin {
+			&:hover {
+				color: #0077b5;
+			}
+		}
+		&.social__link--twitter {
+			&:hover {
+				color: #1da1f2;
+			}
+		}
+
+		&:hover {
+			@include transition(color);
 		}
 
 		div {

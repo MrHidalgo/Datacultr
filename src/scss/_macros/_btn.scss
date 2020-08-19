@@ -16,8 +16,15 @@
 	border-radius: 4px;
 	background-color: #07720a;
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	@include transition(background-color, box-shadow);
 	@include adaptive(1365) {
 		height: 40px;
+	}
+
+	&:hover {
+		background-color: lighten(#07720a, 3%);
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+		@include transition(background-color, box-shadow);
 	}
 
 	&__wrapper {
