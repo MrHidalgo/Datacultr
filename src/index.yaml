@@ -7,3 +7,9 @@ PageList:
 - file: about.html
   titleName: About Us
   ready: 100
+- file: terms.html
+  titleName: Terms of Service
+  ready: 100
+- file: privacy.html
+  titleName: Privacy Policy
+  ready: 100

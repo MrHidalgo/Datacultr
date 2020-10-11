@@ -3670,4 +3670,181 @@ picture {
   height: auto;
 }
 
+/* line 3, src/scss/_components/text/_tpp.scss */
+.tpp {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+/* line 7, src/scss/_components/text/_tpp.scss */
+.tpp h1 {
+  padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  line-height: 61px;
+  color: #000000;
+  text-align: center;
+}
+
+@media screen and (max-width: 1599px) {
+  /* line 7, src/scss/_components/text/_tpp.scss */
+  .tpp h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 7, src/scss/_components/text/_tpp.scss */
+  .tpp h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 7, src/scss/_components/text/_tpp.scss */
+  .tpp h1 {
+    padding-bottom: 35px;
+    line-height: 1.7;
+    font-size: 26px;
+  }
+}
+
+/* line 28, src/scss/_components/text/_tpp.scss */
+.tpp h2 {
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.7;
+  color: #000000;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 28, src/scss/_components/text/_tpp.scss */
+  .tpp h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 28, src/scss/_components/text/_tpp.scss */
+  .tpp h2 {
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+}
+
+/* line 43, src/scss/_components/text/_tpp.scss */
+.tpp p {
+  padding-bottom: 30px;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 43, src/scss/_components/text/_tpp.scss */
+  .tpp p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 43, src/scss/_components/text/_tpp.scss */
+  .tpp p {
+    padding-bottom: 20px;
+    font-size: 15px;
+  }
+}
+
+/* line 56, src/scss/_components/text/_tpp.scss */
+.tpp p strong {
+  font-weight: 700;
+}
+
+/* line 60, src/scss/_components/text/_tpp.scss */
+.tpp p a {
+  font-weight: 700;
+  color: #003c5a;
+}
+
+/* line 66, src/scss/_components/text/_tpp.scss */
+.tpp address {
+  padding-bottom: 30px;
+}
+
+/* line 69, src/scss/_components/text/_tpp.scss */
+.tpp address span {
+  display: block;
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 69, src/scss/_components/text/_tpp.scss */
+  .tpp address span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 69, src/scss/_components/text/_tpp.scss */
+  .tpp address span {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+/* line 83, src/scss/_components/text/_tpp.scss */
+.tpp address span strong {
+  font-weight: 700;
+}
+
+/* line 87, src/scss/_components/text/_tpp.scss */
+.tpp address span a {
+  font-weight: 700;
+  color: #003c5a;
+}
+
+/* line 96, src/scss/_components/text/_tpp.scss */
+.tpp ol li,
+.tpp ul li {
+  padding-bottom: 30px;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 96, src/scss/_components/text/_tpp.scss */
+  .tpp ol li,
+  .tpp ul li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 96, src/scss/_components/text/_tpp.scss */
+  .tpp ol li,
+  .tpp ul li {
+    padding-bottom: 20px;
+    font-size: 15px;
+  }
+}
+
+/* line 109, src/scss/_components/text/_tpp.scss */
+.tpp ol li strong,
+.tpp ul li strong {
+  font-weight: 700;
+}
+
+/* line 113, src/scss/_components/text/_tpp.scss */
+.tpp ol li a,
+.tpp ul li a {
+  font-weight: 700;
+  color: #003c5a;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

@@ -24,6 +24,7 @@
 		// lib
 		initSwiper();
 		initValidation();
+		initSmoothScroll();
 		// ==========================================
 
 		// callback
